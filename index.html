@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alexa Rank Getter</title>
+	<link rel="shortcut icon" href="https://try.alexa.com/wp-content/uploads/2017/01/favicon-16x16-5.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="firstHeading">Get Your Website's <a href="https://alexa.com" class="firstHeadingSpan">Alexa Rank</a></h1><br>
+		<p class="firstParagraph">Enter your <span class="firstParagraphSpan">website/domain</span> name on the below given box.</p><br>
+		<center>
+			<div class="form-group">
+				<form method="POST">
+	        		<input type="text" class="domainNameInput" id="domain_name" placeholder="Enter your domain name" name="domainName" required><br>
+	        		<button type="button" class="Button submitButton" onclick="fetchAPI()" data-target="#resultModal" data-toggle="modal">Submit</button>
+	        	</form>
+        	</div><br>
+        </center>
+
+        <div class="modal" tabindex="-1" role="dialog" id="resultModal">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Your Website's Alexa Rank</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="modalClose()">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p id="alexaRankId">Alexa Rank: Fetching...</p>
+		        <p id="domainNameId">Your Domain Name: Fetching...</p>
+		        <p id="timeTakenId">Total Time Taken: Fetching...</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="modalClose()">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<script type="text/javascript" src="static/javascript/main.js"></script>
+</body>
+</html>

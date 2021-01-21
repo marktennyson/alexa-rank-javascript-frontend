@@ -1,0 +1,58 @@
+.firstHeading{
+	text-align: center;
+	font-size: 4rem;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 70px;
+	line-height: 1.15;
+}
+.firstHeadingSpan{
+	color: #0070f3;
+	text-decoration: none;
+}
+.firstHeadingSpan:hover{
+	color: #ff0066;
+	text-decoration: none;
+}
+.firstParagraph{
+	text-align: center;
+	font-size: 2.7rem;
+	font-family: 'Roboto', sans-serif;
+}
+.firstParagraphSpan{
+	color: #006600;
+}
+.firstParagraphSpan:hover{
+	color: #cc0099;
+}
+.domainNameInput{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+    width: 60%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 30px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 2px solid #ff0000;
+    border-radius: 6px;
+}
+.Button {
+	background-color: #4caf50; /* Green */
+	border-radius: 6px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.submitButton{
+	background-color: #003399;
+}
+.submitButton:hover{
+	background-color: #001a66;
+}

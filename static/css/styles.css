@@ -15,7 +15,7 @@
 }
 .firstParagraph{
 	text-align: center;
-	font-size: 2.7rem;
+	font-size: 2rem;
 	font-family: 'Roboto', sans-serif;
 }
 .firstParagraphSpan{
@@ -55,4 +55,7 @@
 }
 .submitButton:hover{
 	background-color: #001a66;
+}
+.alexaModal{
+	color:red;
 }

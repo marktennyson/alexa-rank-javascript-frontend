@@ -13,7 +13,7 @@ function fetchAPI(){
 		const domainAlexaRank = body.alexa_rank;
 		const timeTaken = body.time_taken;
 		const domainEngagementinS = body.engagement;
-		const domainEngagementinM = (parseFloat(domainEngagementinS)/60).toFixed(2).toString().split(".")[0];
+		const domainEngagementinM = (parseFloat(domainEngagementinS)/60).toString().split(".")[0];
 		const domainEngagementinSf = (parseFloat(domainEngagementinS)%60)
 		document.getElementById("alexaRankSpan").innerHTML = domainAlexaRank;
 		document.getElementById("domainEngagementSpan").innerHTML = domainEngagementinM+" Minutes "+domainEngagementinSf+" Seconds";

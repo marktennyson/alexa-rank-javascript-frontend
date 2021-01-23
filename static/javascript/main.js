@@ -3,6 +3,7 @@
 function fetchAPI(){
 	const endpoint = "https://alexa-rank.vercel.app/api/getrank?domain="
 	const domainName = document.getElementById("domain_name").value;
+	document.getElementById("domain_name").value = "";
 	if (!domainName){
 		alert("Please enter a valid domain name.");
 		location.reload();

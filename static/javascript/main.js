@@ -14,7 +14,7 @@ function fetchAPI(){
 		const timeTaken = body.time_taken;
 		const domainEngagementinS = body.engagement;
 		const domainEngagementinM = (parseFloat(domainEngagementinS)/60).toString().split(".")[0];
-		const domainEngagementinSf = (parseFloat(domainEngagementinS)%60)
+		const domainEngagementinSf = (parseFloat(domainEngagementinS)%60);
 		document.getElementById("alexaRankSpan").innerHTML = domainAlexaRank;
 		document.getElementById("domainEngagementSpan").innerHTML = domainEngagementinM+" Minutes "+domainEngagementinSf+" Seconds";
 		document.getElementById("domainNameSpan").innerHTML = domainName;
@@ -28,3 +28,7 @@ function modalClose(){
 	document.getElementById("domainNameSpan").innerHTML = "Fetching...";
 	document.getElementById("timeTakenSpan").innerHTML = "Fetching...";
 }
+
+$('body').click(function(){
+	modalClose();
+})

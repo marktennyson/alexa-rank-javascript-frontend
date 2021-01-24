@@ -1,25 +1,43 @@
+.mainBody{
+	font-family: 'Roboto', sans-serif;
+}
 .firstHeading{
 	text-align: center;
 	font-size: 4rem;
-	font-family: 'Roboto', sans-serif;
 	padding-top: 70px;
 	line-height: 1.15;
 }
 .firstHeadingSpan{
 	color: #0070f3;
 	text-decoration: none;
+	animation-name: firstHeadingAnimation;
+	animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+@keyframes firstHeadingAnimation{
+	0%   {color:#990099;}
+	25%  {color:#0033cc;}
+	50%  {color:#808000;}
+	75%  {color:#006600;}
+	100% {color:#990099;}
+}
+
 .firstHeadingSpan:hover{
-	color: #ff0066;
 	text-decoration: none;
 }
 .firstParagraph{
 	text-align: center;
 	font-size: 2rem;
-	font-family: 'Roboto', sans-serif;
 }
 .firstParagraphSpan{
-	color: #006600;
+	color: #cc0099;
+	animation-name: firstParagraphAnimation;
+	animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes firstParagraphAnimation{
+	50% {color: #cc0099;}
+	100% {color:#006600;}
 }
 .firstParagraphSpan:hover{
 	color: #cc0099;
@@ -59,3 +77,16 @@
 .alexaModal{
 	color:red;
 }
+#domainInputLabel{
+	font-size: 1.5rem;
+}
+#domainInputLabel span{
+	color:red;
+	animation-name: domainInputAnimation;
+	animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/* @keyframes domainInputAnimation{
+	50% {color:green;}
+	100% {color:yellow;}
+} */

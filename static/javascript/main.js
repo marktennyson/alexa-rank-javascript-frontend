@@ -32,3 +32,24 @@ function modalClose(){
 $('#heroPage').click(function(){
 	modalClose();
 })
+
+superplaceholder({
+	el: domain_name,
+	sentences: [ 'google.com', 'facebook.com', 'youtube.com', 'linkedin.com', 'googleplus.com', 'baidu.com',
+				 'microsoft.com', 'twitter.com', 'whatsapp.com', 'nasa.gov', 'wikipedia.org', 'nginx.org'],
+	options: {
+		letterDelay: 80,
+		loop: true,
+		startOnFocus: false
+	}
+  })
+
+// setTimeout(function() {
+// 	$('#firstHeadingId').css('color','#000');
+// }​,500);​
+
+// while (true) {
+// 	$('#firstHeadingId').css('color','#000');
+// 	setTimeout(500);
+// 	$('#firstHeadingId').css('color','#0070f3');
+// }

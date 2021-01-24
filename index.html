@@ -11,14 +11,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
+	<div class="container mainBody">
 		<div id="heroPage">
-			<h1 class="firstHeading">Get Your Website's <a href="https://alexa.com" class="firstHeadingSpan">Alexa Rank</a></h1><br>
+			<h1 class="firstHeading">Get Your Website's <a href="https://alexa.com" class="firstHeadingSpan" id="firstHeadingId">Alexa Rank</a></h1><br>
 			<p class="firstParagraph">Enter your <span class="firstParagraphSpan">website/domain</span> name on the below given box.</p><br>
 			<center>
 				<div class="form-group">
 					<form method="POST">
-						<input type="text" class="domainNameInput" id="domain_name" placeholder="Enter your domain name" name="domainName" required><br>
+						<label id=domainInputLabel>Enter Your <span>Domain</span> Name:</label>
+						<input type="text" class="domainNameInput" id="domain_name" name="domainName" required><br>
 						<button type="button" class="Button submitButton" onclick="fetchAPI()" data-target="#resultModal" data-toggle="modal">Submit</button>
 					</form>
 				</div><br>
@@ -37,7 +38,7 @@
 		      <div class="modal-body">
 		        <p>Alexa Rank: <span id="alexaRankSpan" class="alexaModal">Fetching...</span></p>
 		        <p>Domain Engagement: <span id="domainEngagementSpan" class="alexaModal">Fetching...</span></p>
-		        <p>Your Domain Name: <span id="domainNameSpan" class="alexaModal">Fetching...</span></p>
+		        <p>Entered Domain Name: <span id="domainNameSpan" class="alexaModal">Fetching...</span></p>
 		        <p>Total Time Taken: <span id="timeTakenSpan" class="alexaModal">Fetching...</span></p>
 		      </div>
 		      <div class="modal-footer">
@@ -47,6 +48,7 @@
 		  </div>
 		</div>
 	</div>
+	<script src="static/javascript/superplaceholder.min.js"></script>
 	<script type="text/javascript" src="static/javascript/main.js"></script>
 </body>
 </html>

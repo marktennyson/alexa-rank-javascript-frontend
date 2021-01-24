@@ -29,6 +29,6 @@ function modalClose(){
 	document.getElementById("timeTakenSpan").innerHTML = "Fetching...";
 }
 
-$('body').click(function(){
+$('#heroPage').click(function(){
 	modalClose();
 })

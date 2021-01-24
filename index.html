@@ -12,16 +12,18 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="firstHeading">Get Your Website's <a href="https://alexa.com" class="firstHeadingSpan">Alexa Rank</a></h1><br>
-		<p class="firstParagraph">Enter your <span class="firstParagraphSpan">website/domain</span> name on the below given box.</p><br>
-		<center>
-			<div class="form-group">
-				<form method="POST">
-	        		<input type="text" class="domainNameInput" id="domain_name" placeholder="Enter your domain name" name="domainName" required><br>
-	        		<button type="button" class="Button submitButton" onclick="fetchAPI()" data-target="#resultModal" data-toggle="modal">Submit</button>
-	        	</form>
-        	</div><br>
-        </center>
+		<div id="heroPage">
+			<h1 class="firstHeading">Get Your Website's <a href="https://alexa.com" class="firstHeadingSpan">Alexa Rank</a></h1><br>
+			<p class="firstParagraph">Enter your <span class="firstParagraphSpan">website/domain</span> name on the below given box.</p><br>
+			<center>
+				<div class="form-group">
+					<form method="POST">
+						<input type="text" class="domainNameInput" id="domain_name" placeholder="Enter your domain name" name="domainName" required><br>
+						<button type="button" class="Button submitButton" onclick="fetchAPI()" data-target="#resultModal" data-toggle="modal">Submit</button>
+					</form>
+				</div><br>
+			</center>
+		</div>
 
         <div class="modal" tabindex="-1" role="dialog" id="resultModal">
 		  <div class="modal-dialog" role="document">
